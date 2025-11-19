@@ -1,12 +1,11 @@
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
-  background: #f0f2f5;
-  color: #333;
+  background: white;
+  color: black;
 }
 
 .navbar {
-  background: #4b7bec;
+  background: rgb(125 83 246);
   color: white;
   padding: 15px 30px;
   display: flex;
@@ -36,7 +35,6 @@ body {
   background: white;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .input-box {
@@ -52,17 +50,14 @@ input {
 }
 
 button {
-  background: #4b7bec;
-  color: white;
+  background-color: black;
+  color: rgb(239, 238, 238);
   border: none;
   border-radius: 8px;
   padding: 8px 14px;
   cursor: pointer;
 }
 
-button:hover {
-  background: #3867d6;
-}
 
 ul {
   list-style: none;
@@ -80,12 +75,11 @@ li {
 
 li.done {
   text-decoration: line-through;
-  opacity: 0.6;
 }
 
 .empty {
   text-align: center;
-  color: #888;
+  color: #131212;
 }
 
 .login-page {
@@ -103,6 +97,7 @@ li.done {
   display: flex;
   gap: 15px;
   align-items: center;
+  font-size: larger;
 }
 
 .user-section {
@@ -114,7 +109,6 @@ li.done {
 .username {
   font-weight: 600;
   color: #fff;
-  background: rgba(255,255,255,0.2);
   padding: 6px 12px;
   border-radius: 8px;
 }

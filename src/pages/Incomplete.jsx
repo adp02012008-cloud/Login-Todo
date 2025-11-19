@@ -9,7 +9,7 @@ export default function Incomplete() {
     <div className="container">
       <h2>Incomplete Tasks</h2>
       {incomplete.length === 0 ? (
-        <p className="empty">no incomplete tasks here</p>
+        <p className="empty">All tasks are completed</p>
       ) : (
         <ul>{incomplete.map((t) => <li key={t.id}>{t.text}</li>)}</ul>
       )}

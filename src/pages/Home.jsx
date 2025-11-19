@@ -5,11 +5,11 @@ export default function Home() {
   const todoKey = `todos_${user}`;
   const deletedKey = `deleted_${user}`;
 
-  const [todos, setTodos] = useState(() => JSON.parse(localStorage.getItem(todoKey)) || []);
+  const [todos, setTodos] = useState(() => JSON.parse(localStorage.getItem(todoKey)) || []);//json to array
   const [input, setInput] = useState("");
 
   useEffect(() => {
-    localStorage.setItem(todoKey, JSON.stringify(todos));
+    localStorage.setItem(todoKey, JSON.stringify(todos));//array to json
   }, [todos]);
 
   const addTodo = () => {

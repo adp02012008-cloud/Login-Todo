@@ -9,7 +9,7 @@ export default function Completed() {
     <div className="container">
       <h2>Completed Tasks</h2>
       {completed.length === 0 ? (
-        <p className="empty">No completed tasks yet.</p>
+        <p className="empty">No tasks completed</p>
       ) : (
         <ul>{completed.map((t) => <li key={t.id}>{t.text}</li>)}</ul>
       )}

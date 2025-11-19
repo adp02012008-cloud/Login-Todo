@@ -8,7 +8,7 @@ export default function Deleted() {
     <div className="container">
       <h2>Deleted History</h2>
       {deleted.length === 0 ? (
-        <p className="empty">No deleted items yet.</p>
+        <p className="empty">No tasks deleted</p>
       ) : (
         <ul>{deleted.map((t) => <li key={t.id}>{t.text}</li>)}</ul>
       )}
