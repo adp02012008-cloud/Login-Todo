@@ -5,11 +5,11 @@ export default function Home() {
   const todoKey = `todos_${user}`;
   const deletedKey = `deleted_${user}`;
 
-  const [todos, setTodos] = useState(() => JSON.parse(localStorage.getItem(todoKey)) || []);//json to array
+  const [todos, setTodos] = useState(() => JSON.parse(localStorage.getItem(todoKey)) || []);
   const [input, setInput] = useState("");
 
   useEffect(() => {
-    localStorage.setItem(todoKey, JSON.stringify(todos));//array to json
+    localStorage.setItem(todoKey, JSON.stringify(todos));
   }, [todos]);
 
   const addTodo = () => {
@@ -36,7 +36,7 @@ export default function Home() {
       <div className="input-box">
         <input
           type="text"
-          placeholder="Enter todo..."
+          placeholder="Enter todo"
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
@@ -44,7 +44,7 @@ export default function Home() {
       </div>
 
       {todos.length === 0 ? (
-        <p className="empty">No tasks yet!</p>) 
+        <p className="empty">No tasks</p>) 
         : 
         (<ul>
           {todos.map((todo) => (

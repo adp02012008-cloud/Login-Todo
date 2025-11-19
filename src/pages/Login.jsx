@@ -12,7 +12,7 @@ export default function Login({ onLogin }) {
       <h2>Welcome to Todo App</h2>
       <input
         type="text"
-        placeholder="Enter your name to continue"
+        placeholder="Enter your name"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
